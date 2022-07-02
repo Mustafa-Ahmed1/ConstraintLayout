@@ -18,7 +18,7 @@
 
     <style name="CupSizeText">
         <item name="android:fontFamily">@font/poppins_semi_bold</item>
-        <item name="android:textColor">@color/gray02</item>
+        <item name="android:textColor">@color/gray</item>
         <item name="android:textSize">@dimen/small_font_size</item>
     </style>
 </resources>

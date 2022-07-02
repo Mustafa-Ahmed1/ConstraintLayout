@@ -94,7 +94,7 @@
         android:layout_marginTop="@dimen/teeny_scale"
         android:fontFamily="@font/poppins_semi_bold"
         android:text="@string/best_sales"
-        android:textColor="@color/gray02"
+        android:textColor="@color/gray"
         android:textSize="@dimen/medium_font_size"
         app:layout_constraintBottom_toBottomOf="@+id/order_name"
         app:layout_constraintRight_toRightOf="@id/price"
@@ -107,7 +107,7 @@
         android:layout_marginTop="@dimen/small_scale"
         android:fontFamily="@font/poppins_semi_bold"
         android:text="@string/size_options"
-        android:textColor="@color/gray02"
+        android:textColor="@color/gray"
         android:textSize="@dimen/large_0_font_size"
         app:layout_constraintLeft_toLeftOf="@id/order_name"
         app:layout_constraintTop_toBottomOf="@+id/order_name" />

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- padding and margin scales -->
+    <dimen name="teeny_scale">4dp</dimen>
+    <dimen name="small_scale">8dp</dimen>
+    <dimen name="medium_scale">12dp</dimen>
+    <dimen name="large_0_scale">16dp</dimen>
+    <dimen name="large_1_scale">24dp</dimen>
+    <dimen name="large_2_scale">32dp</dimen>
+    <dimen name="large_3_scale">48dp</dimen>
+    <!-- texts scales -->
+    <dimen name="small_font_size">8sp</dimen>
+    <dimen name="medium_font_size">12sp</dimen>
+    <dimen name="large_0_font_size">16sp</dimen>
+    <dimen name="large_1_font_size">20sp</dimen>
+    <dimen name="large_2_font_size">24sp</dimen>
+    <!-- icons scales -->
+    <dimen name="normal_icon_scale">24dp</dimen>
+    <dimen name="large_icon_scale">64dp</dimen>
+    <!-- images scales -->
+    <dimen name="large_image_scale">300dp</dimen>
+</resources>

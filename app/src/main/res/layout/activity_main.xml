@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/large_2_scale"
+        android:src="@drawable/coffee_background"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_1_scale"
+        android:layout_marginTop="@dimen/large_1_scale"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/details"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/screen_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/large_0_font_size"
+        app:layout_constraintLeft_toRightOf="@id/arrow"
+        app:layout_constraintRight_toLeftOf="@id/cart"
+        app:layout_constraintTop_toTopOf="@id/arrow" />
+
+    <ImageView
+        android:id="@+id/cart"
+        android:layout_width="@dimen/normal_icon_scale"
+        android:layout_height="@dimen/normal_icon_scale"
+        android:layout_marginEnd="@dimen/large_1_scale"
+        android:src="@drawable/shopping_cart"
+        app:layout_constraintLeft_toRightOf="@id/details"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/arrow" />
+
+    <ImageView
+        android:id="@+id/starbucks"
+        android:layout_width="@dimen/large_image_scale"
+        android:layout_height="@dimen/large_image_scale"
+        android:layout_marginTop="@dimen/large_3_scale"
+        android:src="@drawable/starbucks_cup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/order_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_0_scale"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/order_name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/large_2_font_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/starbucks" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/price"
+        android:textColor="@color/green"
+        android:textSize="@dimen/large_1_scale"
+        app:layout_constraintBottom_toTopOf="@+id/best_sales"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/order_name"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/best_sales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/teeny_scale"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/best_sales"
+        android:textColor="@color/gray02"
+        android:textSize="@dimen/medium_font_size"
+        app:layout_constraintBottom_toBottomOf="@+id/order_name"
+        app:layout_constraintRight_toRightOf="@id/price"
+        app:layout_constraintTop_toBottomOf="@+id/price" />
+
+    <TextView
+        android:id="@+id/size_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_scale"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/size_options"
+        android:textColor="@color/gray02"
+        android:textSize="@dimen/large_0_font_size"
+        app:layout_constraintLeft_toLeftOf="@id/order_name"
+        app:layout_constraintTop_toBottomOf="@+id/order_name" />
+
+    <ImageView
+        android:id="@+id/tall_cup"
+        android:layout_width="@dimen/large_icon_scale"
+        android:layout_height="@dimen/large_icon_scale"
+        android:layout_marginTop="@dimen/small_scale"
+        android:src="@drawable/cup_tall"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="@id/order_name"
+        app:layout_constraintRight_toLeftOf="@id/grande_cup"
+        app:layout_constraintTop_toBottomOf="@id/size_options" />
+
+    <ImageView
+        android:id="@+id/grande_cup"
+        android:layout_width="@dimen/large_icon_scale"
+        android:layout_height="@dimen/large_icon_scale"
+        android:src="@drawable/cup_grande"
+        app:layout_constraintLeft_toRightOf="@id/tall_cup"
+        app:layout_constraintRight_toLeftOf="@id/venti_cup"
+        app:layout_constraintTop_toTopOf="@id/tall_cup" />
+
+    <ImageView
+        android:id="@+id/venti_cup"
+        android:layout_width="@dimen/large_icon_scale"
+        android:layout_height="@dimen/large_icon_scale"
+        android:src="@drawable/cup_venti"
+        app:layout_constraintLeft_toRightOf="@id/grande_cup"
+        app:layout_constraintRight_toLeftOf="@id/custom_cup"
+        app:layout_constraintTop_toTopOf="@id/tall_cup" />
+
+    <ImageView
+        android:id="@+id/custom_cup"
+        android:layout_width="@dimen/large_icon_scale"
+        android:layout_height="@dimen/large_icon_scale"
+        android:src="@drawable/cup_custom"
+        app:layout_constraintLeft_toRightOf="@id/venti_cup"
+        app:layout_constraintRight_toRightOf="@id/price"
+        app:layout_constraintTop_toTopOf="@id/tall_cup" />
+
+    <TextView
+        android:id="@+id/tall_text"
+        style="@style/CupNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/tall"
+        app:layout_constraintLeft_toLeftOf="@+id/tall_cup"
+        app:layout_constraintRight_toRightOf="@id/tall_cup"
+        app:layout_constraintTop_toBottomOf="@id/tall_cup" />
+
+    <TextView
+        android:id="@+id/grande_text"
+        style="@style/CupNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/grande"
+        app:layout_constraintLeft_toLeftOf="@+id/grande_cup"
+        app:layout_constraintRight_toRightOf="@id/grande_cup"
+        app:layout_constraintTop_toTopOf="@id/tall_text" />
+
+    <TextView
+        android:id="@+id/venti_text"
+        style="@style/CupNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/venti"
+        app:layout_constraintLeft_toLeftOf="@+id/venti_cup"
+        app:layout_constraintRight_toRightOf="@id/venti_cup"
+        app:layout_constraintTop_toTopOf="@id/tall_text" />
+
+    <TextView
+        android:id="@+id/custom_text"
+        style="@style/CupNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/custom"
+        app:layout_constraintLeft_toLeftOf="@+id/custom_cup"
+        app:layout_constraintRight_toRightOf="@id/custom_cup"
+        app:layout_constraintTop_toTopOf="@id/tall_text" />
+
+    <TextView
+        android:id="@+id/tall_size"
+        style="@style/CupSizeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tall_size"
+        app:layout_constraintLeft_toLeftOf="@id/tall_text"
+        app:layout_constraintRight_toRightOf="@id/tall_text"
+        app:layout_constraintTop_toBottomOf="@id/tall_text" />
+
+    <TextView
+        android:id="@+id/grande_size"
+        style="@style/CupSizeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/grande_size"
+        app:layout_constraintLeft_toLeftOf="@id/grande_text"
+        app:layout_constraintRight_toRightOf="@id/grande_text"
+        app:layout_constraintTop_toTopOf="@id/tall_size" />
+
+    <TextView
+        android:id="@+id/venti_size"
+        style="@style/CupSizeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/venti_size"
+        app:layout_constraintLeft_toLeftOf="@id/venti_text"
+        app:layout_constraintRight_toRightOf="@id/venti_text"
+        app:layout_constraintTop_toTopOf="@id/tall_size" />
+
+    <TextView
+        android:id="@+id/custom_size"
+        style="@style/CupSizeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/custom_size"
+        app:layout_constraintLeft_toLeftOf="@id/custom_text"
+        app:layout_constraintRight_toRightOf="@id/custom_text"
+        app:layout_constraintTop_toTopOf="@id/tall_size" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginBottom="@dimen/large_1_scale"
+        android:background="@drawable/main_button"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingHorizontal="@dimen/large_2_scale"
+        android:text="@string/add_button"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@id/cart" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/minus_button"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="@dimen/large_0_scale"
+        android:background="@drawable/main_button"
+        android:text="@string/minus_sign"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/add_button"
+        app:layout_constraintLeft_toLeftOf="@id/arrow"
+        app:layout_constraintRight_toLeftOf="@id/number_of_cups"
+        app:layout_constraintTop_toTopOf="@id/add_button" />
+
+    <TextView
+        android:id="@+id/number_of_cups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/cups_number"
+        android:textColor="@color/black"
+        android:textSize="@dimen/large_1_font_size"
+        app:layout_constraintLeft_toRightOf="@id/minus_button"
+        app:layout_constraintRight_toLeftOf="@id/plus_button"
+        app:layout_constraintTop_toTopOf="@id/minus_button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/plus_button"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="@dimen/large_0_scale"
+        android:background="@drawable/main_button"
+        android:text="@string/plus_sign"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/minus_button"
+        app:layout_constraintLeft_toRightOf="@id/number_of_cups"
+        app:layout_constraintTop_toTopOf="@id/minus_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

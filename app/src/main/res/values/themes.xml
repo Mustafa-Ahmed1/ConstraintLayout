@@ -11,7 +11,7 @@
     </style>
 
     <style name="CupNameText">
-        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:fontFamily">@font/poppins_semi_bold</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">@dimen/medium_font_size</item>
     </style>

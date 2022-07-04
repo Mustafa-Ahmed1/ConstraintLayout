@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.ConstraintLayout" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/green</item>
-        <item name="colorPrimaryVariant">@color/green</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_color</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
@@ -20,6 +20,16 @@
         <item name="android:fontFamily">@font/poppins_semi_bold</item>
         <item name="android:textColor">@color/gray</item>
         <item name="android:textSize">@dimen/small_font_size</item>
+    </style>
+
+    <style name="CircleBackgroundStarbucks">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomLeft">100dp</item>
+        <item name="cornerSizeBottomRight">100dp</item>
+    </style>
+
+    <style name="MainColor">
+        <item name="color">@color/primary_color</item>
     </style>
 </resources>
 
